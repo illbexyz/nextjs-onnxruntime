@@ -1,5 +1,7 @@
 import * as onnx from "onnxruntime-web";
 
+onnx.env.wasm.proxy = true;
+
 const modelBytes = new Uint8Array([
   8, 3, 18, 12, 98, 97, 99, 107, 101, 110, 100, 45, 116, 101, 115, 116, 58, 98,
   10, 17, 10, 1, 97, 10, 1, 98, 18, 1, 99, 34, 6, 77, 97, 116, 77, 117, 108, 18,
