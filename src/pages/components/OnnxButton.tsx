@@ -1,4 +1,4 @@
-import * as onnx from "onnxruntime-web";
+import * as onnx from "onnxruntime-web/webgpu";
 
 const modelBytes = new Uint8Array([
   8, 3, 18, 12, 98, 97, 99, 107, 101, 110, 100, 45, 116, 101, 115, 116, 58, 98,
