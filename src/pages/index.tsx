@@ -1,11 +1,7 @@
 import Head from "next/head";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
-import dynamic from "next/dynamic";
-
-const OnnxButton = dynamic(() => import("./components/OnnxButton"), {
-  ssr: false,
-});
+import OnnxButton from "@/components/OnnxButton";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

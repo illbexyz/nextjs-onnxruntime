@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   headers: async () => {
     return [
       {
@@ -17,6 +16,12 @@ const nextConfig = {
         source: "/:path*",
       },
     ];
+  },
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.module.parser.javascript.importMeta = false;
+
+    return config;
   },
 };
 
